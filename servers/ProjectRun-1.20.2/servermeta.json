@@ -2,10 +2,10 @@
   "$schema": "file:///D:/Coding/Projects/mchlauncher/Distro/tanari_0331/schemas/ServerMetaSchema.schema.json",
   "meta": {
     "version": "1.0.0",
-    "name": "ProjectRun (Minecraft 1.20.2)",
+    "name": "Project Run",
     "description": "Minecraft 1.20.2 (Fabric v0.17.2)",
-    "icon": "https://github.com/mchdistro/레포/raw/main/server-icon.png",
-    "address": "mc.gotiger.dev:20201",
+    "icon": "https://github.com/mchdistro/tanari_0331/raw/main/server-icon.png",
+    "address": "mc.gotiger.dev:20202",
     "discord": {
       "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
       "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",

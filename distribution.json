@@ -9,11 +9,11 @@
   "servers": [
     {
       "id": "ProjectRun-1.20.2",
-      "name": "ProjectRun (Minecraft 1.20.2)",
+      "name": "Project Run",
       "description": "Minecraft 1.20.2 (Fabric v0.17.2)",
-      "icon": "https://github.com/mchdistro/레포/raw/main/server-icon.png",
+      "icon": "https://github.com/mchdistro/tanari_0331/raw/main/server-icon.png",
       "version": "1.0.0",
-      "address": "mc.gotiger.dev:20201",
+      "address": "mc.gotiger.dev:20202",
       "minecraftVersion": "1.20.2",
       "discord": {
         "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
@@ -123,6 +123,78 @@
             "size": 2085618,
             "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/fabricmods/required/fabric-api-0.91.6+1.20.2.jar",
             "MD5": "f223446b9bd28607d2adcf2ba7176261"
+          }
+        },
+        {
+          "id": "generated.fabricmod:iris:1.6.14@jar",
+          "name": "Iris",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 2399719,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/fabricmods/required/iris-mc1.20.2-1.6.14.jar",
+            "MD5": "c7ac1b96cffafd13d3dd683c6fa90875"
+          }
+        },
+        {
+          "id": "com.hyfata.najoan:koreanpatch:1.9.0+mc1.20.2@jar",
+          "name": "Korean Patch",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 567000,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/fabricmods/required/koreanpatch-fabric-1.9.0+mc1.20.2.jar",
+            "MD5": "12cf80142aae4102f5dcbe4ec3ece3ce"
+          }
+        },
+        {
+          "id": "me.jellysquid.mods:sodium:0.5.5@jar",
+          "name": "Sodium",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 916812,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/fabricmods/required/sodium-fabric-mc1.20.2-0.5.5.jar",
+            "MD5": "c6bec4331d5241cb92bddec20d9f90d2"
+          }
+        },
+        {
+          "id": "de.maxhenkel:voicechat:1.20.2-2.5.12@jar",
+          "name": "Simple Voice Chat",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 8124394,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/fabricmods/required/voicechat-fabric-1.20.2-2.5.12.jar",
+            "MD5": "ef071fe08e7d067d4bbe953c200b4173"
+          }
+        },
+        {
+          "id": "options.txt",
+          "name": "options.txt",
+          "type": "File",
+          "artifact": {
+            "size": 170,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/files/options.txt",
+            "path": "options.txt"
+          }
+        },
+        {
+          "id": "servers.dat",
+          "name": "servers.dat",
+          "type": "File",
+          "artifact": {
+            "size": 163,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/files/servers.dat",
+            "MD5": "967be52f0751f5d573b9fce4621a588b",
+            "path": "servers.dat"
+          }
+        },
+        {
+          "id": "ComplementaryUnbound_r5.5.1.zip",
+          "name": "ComplementaryUnbound_r5.5.1.zip",
+          "type": "File",
+          "artifact": {
+            "size": 456332,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/files/shaderpacks/ComplementaryUnbound_r5.5.1.zip",
+            "MD5": "576ef06da170458879f3a03e685d487a",
+            "path": "shaderpacks/ComplementaryUnbound_r5.5.1.zip"
           }
         }
       ]
