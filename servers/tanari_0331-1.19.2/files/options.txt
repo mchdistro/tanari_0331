@@ -1,0 +1,10 @@
+version:3120
+lang:ko_kr
+narrator:0
+tutorialStep:none
+skipMultiplayerWarning:true
+allowServerListing:true
+onlyShowSecureChat:false
+key_key.chat:key.keyboard.enter
+soundCategory_master:0.2
+soundCategory_music:0.0

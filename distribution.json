@@ -658,6 +658,16 @@
           }
         },
         {
+          "id": "com.hyfata.najoan.koreanpatch.client:koreanpatch:1.9.5+mc1.19.2@jar",
+          "name": "Korean Patch",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 300891,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/koreanpatch-forge-1.9.5+mc1.19.2.jar",
+            "MD5": "4234bfb200b28b65626cda8dc624b9b5"
+          }
+        },
+        {
           "id": "fr.samlegamer:macawsbridgesbop:1.19.2-1.2@jar",
           "name": "Macaw's Bridges - BOP",
           "type": "ForgeMod",
@@ -945,6 +955,27 @@
             "size": 397819,
             "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/waystones-forge-1.19.2-11.3.1.jar",
             "MD5": "d11288066796af8360da63e80370e6b6"
+          }
+        },
+        {
+          "id": "options.txt",
+          "name": "options.txt",
+          "type": "File",
+          "artifact": {
+            "size": 219,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/files/options.txt",
+            "path": "options.txt"
+          }
+        },
+        {
+          "id": "servers.dat",
+          "name": "servers.dat",
+          "type": "File",
+          "artifact": {
+            "size": 100,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/files/servers.dat",
+            "MD5": "38df9764bdf7ea16275e941034e8708b",
+            "path": "servers.dat"
           }
         }
       ]
