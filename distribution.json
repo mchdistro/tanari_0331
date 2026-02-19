@@ -8,203 +8,943 @@
   },
   "servers": [
     {
-      "id": "ProjectRun-1.20.2",
-      "name": "Project Run",
-      "description": "Minecraft 1.20.2 (Fabric v0.17.2)",
+      "id": "tanari_0331-1.19.2",
+      "name": "Type : Cute",
+      "description": "Minecraft 1.19.2 (Forge v43.5.2)",
       "icon": "https://github.com/mchdistro/tanari_0331/raw/main/server-icon.png",
       "version": "1.0.0",
-      "address": "mc.gotiger.dev:20202",
-      "minecraftVersion": "1.20.2",
+      "address": "mc.gotiger.dev:20207",
+      "minecraftVersion": "1.19.2",
       "discord": {
         "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
         "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
         "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
       },
-      "mainServer": true,
-      "autoconnect": true,
+      "mainServer": false,
+      "autoconnect": false,
+      "javaOptions": {
+        "supported": "=>21",
+        "suggestedMajor": 21,
+        "platformOptions": [
+          {
+            "platform": "win32",
+            "architecture": "x64",
+            "distribution": "TEMURIN"
+          }
+        ],
+        "ram": {
+          "minimum": 4096,
+          "recommended": 8192
+        }
+      },
       "modules": [
         {
-          "id": "net.fabricmc:fabric-loader:0.17.2",
-          "name": "Fabric (fabric-loader)",
-          "type": "Fabric",
+          "id": "net.minecraftforge:lowcodelanguage:1.19.2-43.5.2",
+          "name": "Minecraft Forge (lowcodelanguage)",
+          "type": "ForgeHosted",
+          "classpath": true,
           "artifact": {
-            "size": 1915305,
-            "MD5": "72dd698d701202d46303fc913cfcbf23",
-            "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/fabricmc/fabric-loader/0.17.2/fabric-loader-0.17.2.jar"
+            "size": 7368,
+            "MD5": "78be490e3683f882488fd05fd3d04ed0",
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/lowcodelanguage/1.19.2-43.5.2/lowcodelanguage-1.19.2-43.5.2.jar"
           },
           "subModules": [
             {
-              "id": "1.20.2-fabric-0.17.2",
-              "name": "Fabric (version.json)",
+              "id": "1.19.2-43.5.2",
+              "name": "Minecraft Forge (version.json)",
               "type": "VersionManifest",
               "artifact": {
-                "size": 2847,
-                "MD5": "c64897c4d1976c23975426a4f4f8acf3",
-                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/versions/1.20.2-fabric-0.17.2/1.20.2-fabric-0.17.2.json"
+                "size": 18052,
+                "MD5": "84f0bd9c3e0f5739207ce00b0a437a58",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/versions/1.19.2-forge-43.5.2/1.19.2-forge-43.5.2.json"
               }
             },
             {
-              "id": "org.ow2.asm:asm:9.8",
-              "name": "Fabric (asm)",
+              "id": "net.minecraftforge:fmlcore:1.19.2-43.5.2",
+              "name": "Minecraft Forge (fmlcore)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 113792,
+                "MD5": "51c3ee44089c13ad44427b70deeee6d0",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/fmlcore/1.19.2-43.5.2/fmlcore-1.19.2-43.5.2.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:javafmllanguage:1.19.2-43.5.2",
+              "name": "Minecraft Forge (javafmllanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 16824,
+                "MD5": "b18bed07f726b739f8156e536f960e97",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/javafmllanguage/1.19.2-43.5.2/javafmllanguage-1.19.2-43.5.2.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:mclanguage:1.19.2-43.5.2",
+              "name": "Minecraft Forge (mclanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 4978,
+                "MD5": "611618ad6a5e2c98c3eda5baeb1d8c0f",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/mclanguage/1.19.2-43.5.2/mclanguage-1.19.2-43.5.2.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.19.2-43.5.2:universal",
+              "name": "Minecraft Forge (universal jar)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 2477559,
+                "MD5": "fef37a4d86607f0e1b4e0d91f3ff076b",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/forge/1.19.2-43.5.2/forge-1.19.2-43.5.2-universal.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.19.2-43.5.2:client",
+              "name": "Minecraft Forge (client jar)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 5459446,
+                "MD5": "01ad1637600ebc6e99f5c43f3f9876d6",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/forge/1.19.2-43.5.2/forge-1.19.2-43.5.2-client.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.19.2-20220805.130853:srg",
+              "name": "Minecraft Forge (client srg)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 17332865,
+                "MD5": "70476cb0e2de11b97d913169c3b9d5a8",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraft/client/1.19.2-20220805.130853/client-1.19.2-20220805.130853-srg.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.19.2-20220805.130853:slim",
+              "name": "Minecraft Forge (client slim)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 11637719,
+                "MD5": "7ae1ac1daf86584f93ae83dd916d3bdb",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraft/client/1.19.2-20220805.130853/client-1.19.2-20220805.130853-slim.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.19.2-20220805.130853:extra",
+              "name": "Minecraft Forge (client extra)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 10007043,
+                "MD5": "3014cfce92de3aff55cc50908a510051",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraft/client/1.19.2-20220805.130853/client-1.19.2-20220805.130853-extra.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "cpw.mods:securejarhandler:2.1.4",
+              "name": "Minecraft Forge (securejarhandler)",
               "type": "Library",
               "artifact": {
-                "size": 126113,
-                "MD5": "f5adf3bfc54fb3d2cd8e3a1f275084bc",
-                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/ow2/asm/asm/9.8/asm-9.8.jar"
+                "size": 87315,
+                "MD5": "b49ceccef2c091769f134c47c108cb8b",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/cpw/mods/securejarhandler/2.1.4/securejarhandler-2.1.4.jar"
               }
             },
             {
-              "id": "org.ow2.asm:asm-analysis:9.8",
-              "name": "Fabric (asm-analysis)",
+              "id": "org.ow2.asm:asm:9.7.1",
+              "name": "Minecraft Forge (asm)",
               "type": "Library",
               "artifact": {
-                "size": 35151,
-                "MD5": "3d63508405f5610fc2ea673ff5471553",
-                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar"
+                "size": 126093,
+                "MD5": "e2cdd32d198ad31427d298eee9d39d8d",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar"
               }
             },
             {
-              "id": "org.ow2.asm:asm-commons:9.8",
-              "name": "Fabric (asm-commons)",
+              "id": "org.ow2.asm:asm-commons:9.7.1",
+              "name": "Minecraft Forge (asm-commons)",
               "type": "Library",
               "artifact": {
-                "size": 73498,
-                "MD5": "c8c3d9ccf240144e74d94ff658b024c9",
-                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar"
+                "size": 73459,
+                "MD5": "8344aea3c8b7d707e9d35a62710e77c9",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/ow2/asm/asm-commons/9.7.1/asm-commons-9.7.1.jar"
               }
             },
             {
-              "id": "org.ow2.asm:asm-tree:9.8",
-              "name": "Fabric (asm-tree)",
+              "id": "org.ow2.asm:asm-tree:9.7.1",
+              "name": "Minecraft Forge (asm-tree)",
               "type": "Library",
               "artifact": {
-                "size": 51934,
-                "MD5": "4ab1aaec43c77a2d9b56e6d6d496f705",
-                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar"
+                "size": 51939,
+                "MD5": "e85029f613b6469989cc7cf53fe06b74",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/ow2/asm/asm-tree/9.7.1/asm-tree-9.7.1.jar"
               }
             },
             {
-              "id": "org.ow2.asm:asm-util:9.8",
-              "name": "Fabric (asm-util)",
+              "id": "org.ow2.asm:asm-util:9.7.1",
+              "name": "Minecraft Forge (asm-util)",
               "type": "Library",
               "artifact": {
-                "size": 94559,
-                "MD5": "62498ef324bdab15f407d703f7d78d19",
-                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/ow2/asm/asm-util/9.8/asm-util-9.8.jar"
+                "size": 94519,
+                "MD5": "36d373a9cd6cad9b35db9f984c6b4bbb",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/ow2/asm/asm-util/9.7.1/asm-util-9.7.1.jar"
               }
             },
             {
-              "id": "net.fabricmc:sponge-mixin:0.16.3+mixin.0.8.7",
-              "name": "Fabric (sponge-mixin)",
+              "id": "org.ow2.asm:asm-analysis:9.7.1",
+              "name": "Minecraft Forge (asm-analysis)",
               "type": "Library",
               "artifact": {
-                "size": 1504156,
-                "MD5": "aa4a43d5b0e9abf4fcb57520ffeb0019",
-                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/fabricmc/sponge-mixin/0.16.3+mixin.0.8.7/sponge-mixin-0.16.3+mixin.0.8.7.jar"
+                "size": 35126,
+                "MD5": "4cd9e7178dfb85371bba3077e40cd514",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/ow2/asm/asm-analysis/9.7.1/asm-analysis-9.7.1.jar"
               }
             },
             {
-              "id": "net.fabricmc:intermediary:1.20.2",
-              "name": "Fabric (intermediary)",
+              "id": "net.minecraftforge:accesstransformers:8.0.4",
+              "name": "Minecraft Forge (accesstransformers)",
               "type": "Library",
               "artifact": {
-                "size": 586928,
-                "MD5": "a4022bf6812ba13e86b0fff43fb360d9",
-                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/fabricmc/intermediary/1.20.2/intermediary-1.20.2.jar"
+                "size": 77756,
+                "MD5": "f0d3533f9437ba4428eaee9f28f7ecd9",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/accesstransformers/8.0.4/accesstransformers-8.0.4.jar"
+              }
+            },
+            {
+              "id": "org.antlr:antlr4-runtime:4.9.1",
+              "name": "Minecraft Forge (antlr4-runtime)",
+              "type": "Library",
+              "artifact": {
+                "size": 337868,
+                "MD5": "0dcc4b860d5d8d2852ab94d58c56ca2d",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/antlr/antlr4-runtime/4.9.1/antlr4-runtime-4.9.1.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:eventbus:6.0.3",
+              "name": "Minecraft Forge (eventbus)",
+              "type": "Library",
+              "artifact": {
+                "size": 52624,
+                "MD5": "7c93693a70962a1c1893e3c058dca5cf",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/eventbus/6.0.3/eventbus-6.0.3.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:forgespi:6.0.0",
+              "name": "Minecraft Forge (forgespi)",
+              "type": "Library",
+              "artifact": {
+                "size": 32714,
+                "MD5": "8c04b8c26ac1d55c281bfeaa71731414",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/forgespi/6.0.0/forgespi-6.0.0.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:coremods:5.2.4",
+              "name": "Minecraft Forge (coremods)",
+              "type": "Library",
+              "artifact": {
+                "size": 31872,
+                "MD5": "5295505357ba9b98450c5e3121f82191",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/coremods/5.2.4/coremods-5.2.4.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:modlauncher:10.0.8",
+              "name": "Minecraft Forge (modlauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 130263,
+                "MD5": "3e171edcc29e762d2ecafffabb9e9341",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/cpw/mods/modlauncher/10.0.8/modlauncher-10.0.8.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:unsafe:0.2.0",
+              "name": "Minecraft Forge (unsafe)",
+              "type": "Library",
+              "artifact": {
+                "size": 2834,
+                "MD5": "2d1016ebe4c1a63dd50a59d26bd12db1",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:core:3.6.4",
+              "name": "Minecraft Forge (core)",
+              "type": "Library",
+              "artifact": {
+                "size": 199834,
+                "MD5": "d83ab07267e402131fb93d899a57f5cd",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/com/electronwill/night-config/core/3.6.4/core-3.6.4.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:toml:3.6.4",
+              "name": "Minecraft Forge (toml)",
+              "type": "Library",
+              "artifact": {
+                "size": 31816,
+                "MD5": "bc95d0709fff2164b01fd09fbc988be8",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/com/electronwill/night-config/toml/3.6.4/toml-3.6.4.jar"
+              }
+            },
+            {
+              "id": "org.apache.maven:maven-artifact:3.8.5",
+              "name": "Minecraft Forge (maven-artifact)",
+              "type": "Library",
+              "artifact": {
+                "size": 58077,
+                "MD5": "ce473b0d9fbfd10fe147f03fe8707d67",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar"
+              }
+            },
+            {
+              "id": "net.jodah:typetools:0.8.3",
+              "name": "Minecraft Forge (typetools)",
+              "type": "Library",
+              "artifact": {
+                "size": 15425,
+                "MD5": "ee4596e1413cc1a5e080c971d6064753",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/jodah/typetools/0.8.3/typetools-0.8.3.jar"
+              }
+            },
+            {
+              "id": "net.minecrell:terminalconsoleappender:1.2.0",
+              "name": "Minecraft Forge (terminalconsoleappender)",
+              "type": "Library",
+              "artifact": {
+                "size": 15977,
+                "MD5": "679363fa893293791e55a21f81342f87",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-reader:3.12.1",
+              "name": "Minecraft Forge (jline-reader)",
+              "type": "Library",
+              "artifact": {
+                "size": 150765,
+                "MD5": "a2e7b012cd9802f83321187409174a94",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/jline/jline-reader/3.12.1/jline-reader-3.12.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal:3.12.1",
+              "name": "Minecraft Forge (jline-terminal)",
+              "type": "Library",
+              "artifact": {
+                "size": 211712,
+                "MD5": "3c52be5ab5e3847be6e62269de924cb0",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/jline/jline-terminal/3.12.1/jline-terminal-3.12.1.jar"
+              }
+            },
+            {
+              "id": "org.spongepowered:mixin:0.8.5",
+              "name": "Minecraft Forge (mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1089277,
+                "MD5": "19b3a2ae9e445a6e626fd7d1648cfcb8",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
+              }
+            },
+            {
+              "id": "org.openjdk.nashorn:nashorn-core:15.4",
+              "name": "Minecraft Forge (nashorn-core)",
+              "type": "Library",
+              "artifact": {
+                "size": 2167292,
+                "MD5": "a9b3360e6a486cf62c1952c7816b7d97",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarSelector:0.3.16",
+              "name": "Minecraft Forge (JarJarSelector)",
+              "type": "Library",
+              "artifact": {
+                "size": 17374,
+                "MD5": "5e859d6320cb16055febaedacb8b9806",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/JarJarSelector/0.3.16/JarJarSelector-0.3.16.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarMetadata:0.3.16",
+              "name": "Minecraft Forge (JarJarMetadata)",
+              "type": "Library",
+              "artifact": {
+                "size": 15242,
+                "MD5": "332b118877d33c715f3ee67b75bffdd7",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/JarJarMetadata/0.3.16/JarJarMetadata-0.3.16.jar"
+              }
+            },
+            {
+              "id": "org.apache.logging.log4j:log4j-slf4j-impl:2.19.0",
+              "name": "Minecraft Forge (log4j-slf4j-impl)",
+              "type": "Library",
+              "artifact": {
+                "size": 25040,
+                "MD5": "fa576fa465880e374c504d21b4481f47",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/apache/logging/log4j/log4j-slf4j-impl/2.19.0/log4j-slf4j-impl-2.19.0.jar"
+              }
+            },
+            {
+              "id": "org.apache.logging.log4j:log4j-api:2.19.0",
+              "name": "Minecraft Forge (log4j-api)",
+              "type": "Library",
+              "artifact": {
+                "size": 317566,
+                "MD5": "a7f8fc9751cdaa237a1e18059b4887da",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar"
+              }
+            },
+            {
+              "id": "org.apache.logging.log4j:log4j-core:2.19.0",
+              "name": "Minecraft Forge (log4j-core)",
+              "type": "Library",
+              "artifact": {
+                "size": 1864386,
+                "MD5": "b7f521926226a16531f8e212b1da1ffd",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar"
+              }
+            },
+            {
+              "id": "net.java.dev.jna:jna:5.12.1",
+              "name": "Minecraft Forge (jna)",
+              "type": "Library",
+              "artifact": {
+                "size": 1866196,
+                "MD5": "3bab13d7f5ca715013fcac64ceb4108d",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar"
+              }
+            },
+            {
+              "id": "net.java.dev.jna:jna-platform:5.12.1",
+              "name": "Minecraft Forge (jna-platform)",
+              "type": "Library",
+              "artifact": {
+                "size": 1356627,
+                "MD5": "061ec627ed090f59104e33cea38c97cd",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:bootstraplauncher:1.1.2",
+              "name": "Minecraft Forge (bootstraplauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 8284,
+                "MD5": "48f5255aa337344c467c0150d347813d",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarFileSystems:0.3.16",
+              "name": "Minecraft Forge (JarJarFileSystems)",
+              "type": "Library",
+              "artifact": {
+                "size": 32052,
+                "MD5": "f4efd51f520cb4c98483c040bdc58aab",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/JarJarFileSystems/0.3.16/JarJarFileSystems-0.3.16.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlloader:1.19.2-43.5.2",
+              "name": "Minecraft Forge (fmlloader)",
+              "type": "Library",
+              "artifact": {
+                "size": 263409,
+                "MD5": "64c79d42b3fc58c38c621ba2f3e316a1",
+                "url": "https://github.com/mchdistro/tanari_0331/raw/main/repo/lib/net/minecraftforge/fmlloader/1.19.2-43.5.2/fmlloader-1.19.2-43.5.2.jar"
               }
             }
           ]
         },
         {
-          "id": "generated.fabricmod:fabric-api:0.91.6+1.20.2@jar",
-          "name": "Fabric API",
-          "type": "FabricMod",
+          "id": "com.starfish_studios:another_furniture:2.1.2-1.19.2@jar",
+          "name": "Another Furniture",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 2085618,
-            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/fabricmods/required/fabric-api-0.91.6+1.20.2.jar",
-            "MD5": "f223446b9bd28607d2adcf2ba7176261"
+            "size": 1558864,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/another_furniture-forge-2.1.2-1.19.2.jar",
+            "MD5": "8a7687a75f6eef6109ba580460b9a2ba"
           }
         },
         {
-          "id": "generated.fabricmod:iris:1.6.14@jar",
-          "name": "Iris",
-          "type": "FabricMod",
+          "id": "squeek.appleskin:appleskin:2.4.2+mc1.19@jar",
+          "name": "AppleSkin",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 2399719,
-            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/fabricmods/required/iris-mc1.20.2-1.6.14.jar",
-            "MD5": "c7ac1b96cffafd13d3dd683c6fa90875"
+            "size": 46991,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/appleskin-forge-mc1.19-2.4.2.jar",
+            "MD5": "3cd43c763f6e9a244a115606faaecf4f"
           }
         },
         {
-          "id": "com.hyfata.najoan:koreanpatch:1.9.0+mc1.20.2@jar",
-          "name": "Korean Patch",
-          "type": "FabricMod",
+          "id": "net.blay09.mods:balm:4.5.7@jar",
+          "name": "Balm",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 567000,
-            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/fabricmods/required/koreanpatch-fabric-1.9.0+mc1.20.2.jar",
-            "MD5": "12cf80142aae4102f5dcbe4ec3ece3ce"
+            "size": 314638,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/balm-forge-1.19.2-4.5.7.jar",
+            "MD5": "bf5a56610fa06d255fd644dff5d150ba"
           }
         },
         {
-          "id": "me.jellysquid.mods:sodium:0.5.5@jar",
-          "name": "Sodium",
-          "type": "FabricMod",
+          "id": "biomesoplenty.core:biomesoplenty:17.1.1.162@jar",
+          "name": "Biomes O' Plenty",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 916812,
-            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/fabricmods/required/sodium-fabric-mc1.20.2-0.5.5.jar",
-            "MD5": "c6bec4331d5241cb92bddec20d9f90d2"
+            "size": 21396955,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/BiomesOPlenty-1.19.2-17.1.1.162.jar",
+            "MD5": "bbffe50db713a7c8831a47809df74ae2"
           }
         },
         {
-          "id": "de.maxhenkel:voicechat:1.20.2-2.5.12@jar",
-          "name": "Simple Voice Chat",
-          "type": "FabricMod",
+          "id": "de.maxhenkel:camera:1.19.2-1.0.1@jar",
+          "name": "Camera Mod",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 8124394,
-            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/fabricmods/required/voicechat-fabric-1.20.2-2.5.12.jar",
-            "MD5": "ef071fe08e7d067d4bbe953c200b4173"
+            "size": 293120,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/camera-1.19.2-1.0.1.jar",
+            "MD5": "0f2befb352cb3eda0aba93ba20910880"
           }
         },
         {
-          "id": "iris.properties",
-          "name": "iris.properties",
-          "type": "File",
+          "id": "tschipp.carryon:carryon:2.0.5.10@jar",
+          "name": "Carry On",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 285,
-            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/files/config/iris.properties",
-            "path": "config/iris.properties"
+            "size": 396023,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/carryon-forge-1.19.2-2.0.5.10.jar",
+            "MD5": "c257631e815c1ad3528dda783955829e"
           }
         },
         {
-          "id": "options.txt",
-          "name": "options.txt",
-          "type": "File",
+          "id": "com.mrcrayfish.furniture:cfm:7.0.0-pre35@jar",
+          "name": "MrCrayfish's Furniture Mod",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 170,
-            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/files/options.txt",
-            "path": "options.txt"
+            "size": 2209834,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/cfm-7.0.0-pre35-1.19.2.jar",
+            "MD5": "cd3ceae9615012f62d84fa1af860a1b0"
           }
         },
         {
-          "id": "servers.dat",
-          "name": "servers.dat",
-          "type": "File",
+          "id": "com.blamejared:clumps:9.0.0+14@jar",
+          "name": "Clumps",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 163,
-            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/files/servers.dat",
-            "MD5": "967be52f0751f5d573b9fce4621a588b",
-            "path": "servers.dat"
+            "size": 19083,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/Clumps-forge-1.19.2-9.0.0+14.jar",
+            "MD5": "bdf6d74aadb9d5e5b0167a40ad0ad90d"
           }
         },
         {
-          "id": "ComplementaryUnbound_r5.5.1.zip",
-          "name": "ComplementaryUnbound_r5.5.1.zip",
-          "type": "File",
+          "id": "com.cgessinger.creaturesandbeasts:cnb:1.5.2@jar",
+          "name": "Creatures and Beasts",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 456332,
-            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/ProjectRun-1.20.2/files/shaderpacks/ComplementaryUnbound_r5.5.1.zip",
-            "MD5": "576ef06da170458879f3a03e685d487a",
-            "path": "shaderpacks/ComplementaryUnbound_r5.5.1.zip"
+            "size": 1322280,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/CNB-1.19-1.5.2.jar",
+            "MD5": "d39565595faa5c35604ed4371f7c49c7"
+          }
+        },
+        {
+          "id": "lain.mods.cos.init:cosmeticarmorreworked:1.19.2-v1a@jar",
+          "name": "CosmeticArmorReworked",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 87648,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/CosmeticArmorReworked-1.19.2-v1a.jar",
+            "MD5": "04e67c8f93e7121efb0b34d96db6370c"
+          }
+        },
+        {
+          "id": "lilypuree.decorative_blocks:decorative_blocks:3.0.0@jar",
+          "name": "Decorative Blocks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 512221,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/Decorative%20Blocks-forge-1.19.2-3.0.0.jar",
+            "MD5": "16935a215d03c37dd3e494afc21cc6ac"
+          }
+        },
+        {
+          "id": "samebutdifferent.ecologics:ecologics:2.1.11@jar",
+          "name": "Ecologics",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1811681,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/ecologics-forge-1.19.2-2.1.11.jar",
+            "MD5": "af3ed935f0785beae4ab91065efc4a68"
+          }
+        },
+        {
+          "id": "xyz.apex.forge.fantasyfurniture.core:fantasyfurniture:6.7.0@jar",
+          "name": "Fantasy's Furniture",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3215770,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/fantasyfurniture-1.19.2-6.7.0.jar",
+            "MD5": "d4b49008c7586cdc7cd3eeb9ed45bfa6"
+          }
+        },
+        {
+          "id": "vectorwing.farmersdelight:farmersdelight:1.19-1.2.0@jar",
+          "name": "Farmer's Delight",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2701111,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/FarmersDelight-1.19-1.2.0.jar",
+            "MD5": "2fd6a6af61ca2b6cf95a1f3565f99794"
+          }
+        },
+        {
+          "id": "software.bernie.example:geckolib3:3.1.40@jar",
+          "name": "GeckoLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2938383,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/geckolib-forge-1.19-3.1.40.jar",
+            "MD5": "99b50d68f49918186714abf7746f0249"
+          }
+        },
+        {
+          "id": "mezz.jei:jei:11.6.0.1015@jar",
+          "name": "Just Enough Items",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1090499,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/jei-1.19.2-forge-11.6.0.1015.jar",
+            "MD5": "12d0e2bfd6b5f6bf59aba91eb8950c7b"
+          }
+        },
+        {
+          "id": "journeymap:journeymap:5.9.5@jar",
+          "name": "Journeymap",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 7092501,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/journeymap-1.19.2-5.9.5-forge.jar",
+            "MD5": "2ca94e84f19d509f1ac88b90300c8cdf"
+          }
+        },
+        {
+          "id": "jeresources:jeresources:1.2.2.200@jar",
+          "name": "Just Enough Resources",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 275378,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/JustEnoughResources-1.19.2-1.2.2.200.jar",
+            "MD5": "6565c7bc18b6dd59bfdd0b779c23fd1f"
+          }
+        },
+        {
+          "id": "fr.samlegamer:macawsbridgesbop:1.19.2-1.2@jar",
+          "name": "Macaw's Bridges - BOP",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 467768,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/macawsbridgesbop-1.19.2-1.2.jar",
+            "MD5": "242f93cec69f7083620a886ba0b0d1b6"
+          }
+        },
+        {
+          "id": "fr.samlegamer:macawsbridgesbyg:1.19.2-1.2@jar",
+          "name": "Macaw's Bridges - BYG",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1225680,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/macawsbridgesbyg-1.19.2-1.2.jar",
+            "MD5": "9740114309797fd484f99678a65874d4"
+          }
+        },
+        {
+          "id": "fr.samlegamer:macawsroofsbop:1.19.2-1.4@jar",
+          "name": "Macaw's Roofs - BOP",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 558572,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/macawsroofsbop-1.19.2-1.4.jar",
+            "MD5": "2f6e20930e8ba6b4c316e6a798ecffb6"
+          }
+        },
+        {
+          "id": "fr.samlegamer:macawsroofsbyg:1.19.2-1.3@jar",
+          "name": "Macaw's Roofs - BYG",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1248349,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/macawsroofsbyg-1.19.2-1.3.jar",
+            "MD5": "4bbbf1d963136691684e012c401268c6"
+          }
+        },
+        {
+          "id": "com.mcwbridges.kikoz:mcwbridges:2.0.7@jar",
+          "name": "Macaw's Bridges",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 613756,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcw-bridges-2.0.7-mc1.19.2forge.jar",
+            "MD5": "0f592fa7822c0bed5d70c905011f0a96"
+          }
+        },
+        {
+          "id": "com.mcwdoors.kikoz:mcwdoors:1.0.9@jar",
+          "name": "Macaw's Doors",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1023962,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcw-doors-1.0.9forge-mc1.19.2.jar",
+            "MD5": "fc11e433b640272bb93e4a2f0c67a6df"
+          }
+        },
+        {
+          "id": "com.mcwfences.kikoz:mcwfences:1.0.7@jar",
+          "name": "Macaw's Fences and Walls",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 349410,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcw-fences-1.0.7-mc1.19.2forge.jar",
+            "MD5": "14ed100a49c14ab40e900334a7fda62c"
+          }
+        },
+        {
+          "id": "com.mcwfurnitures.kikoz:mcwfurnitures:3.1.0@jar",
+          "name": "Macaw's Furniture",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1557379,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcw-furniture-3.1.0-mc1.19.2forge.jar",
+            "MD5": "face34db3b943a8add24152e863c7869"
+          }
+        },
+        {
+          "id": "com.mcwlights.kikoz:mcwlights:1.0.5@jar",
+          "name": "Macaw's Lights and Lamps",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 334228,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcw-lights-1.0.5-mc1.19.2forge.jar",
+            "MD5": "e704208545585fa4702d0ef0a40f7026"
+          }
+        },
+        {
+          "id": "com.mcwpaths.kikoz:mcwpaths:1.0.2@jar",
+          "name": "Macaw's Paths and Pavings",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 236169,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcw-paths-1.0.2forge-mc1.19.2.jar",
+            "MD5": "5c46a117d933af7191d4f82f0d7a0c5f"
+          }
+        },
+        {
+          "id": "com.mcwroofs.kikoz:mcwroofs:2.2.3@jar",
+          "name": "Macaw's Roofs",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1642727,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcw-roofs-2.2.3-mc1.19.2forge.jar",
+            "MD5": "5c7b073366f6b79a133d349abcdc08ad"
+          }
+        },
+        {
+          "id": "com.mcwtrpdoors.kikoz:mcwtrpdoors:1.0.9@jar",
+          "name": "Macaw's Trapdoors",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 534275,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcw-trapdoors-1.0.9-mc1.19.2forge.jar",
+            "MD5": "90c096edf8d569b26a2b39734421aea9"
+          }
+        },
+        {
+          "id": "com.mcwwindows.kikoz:mcwwindows:2.1.1@jar",
+          "name": "Macaw's Windows",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 817127,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcw-windows-2.1.1-mc1.19.2forge.jar",
+            "MD5": "42c85f017b1c0cbe17d4ac5a8e49cce8"
+          }
+        },
+        {
+          "id": "fr.samlegamer:mcwfencesbop:1.19.2-1.0@jar",
+          "name": "Macaw's Fences - BOP",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 405286,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcwfencesbop-1.19.2-1.0.jar",
+            "MD5": "a7f67cd890350177b21a163bd7196bf9"
+          }
+        },
+        {
+          "id": "fr.samlegamer:mcwfencesbyg:1.19.2-1.0@jar",
+          "name": "Macaw's Fences - BYG",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 665788,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcwfencesbyg-1.19.2-1.0.jar",
+            "MD5": "0fb3ded19345752d28d1414e0f255331"
+          }
+        },
+        {
+          "id": "fr.samlegamer:mcwfurnituresbop:1.19.2-1.2@jar",
+          "name": "Macaw's Furnitures - BOP",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1660732,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcwfurnituresbop-1.19.2-1.2.jar",
+            "MD5": "9d11b0c31eef6dabd7b20fb250bb9107"
+          }
+        },
+        {
+          "id": "fr.samlegamer:mcwfurnituresbyg:1.19.2-1.1@jar",
+          "name": "Macaw's Furnitures - BYG",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 4115604,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/mcwfurnituresbyg-1.19.2-1.1.jar",
+            "MD5": "30c86313a5826162f0303be7a472a0c3"
+          }
+        },
+        {
+          "id": "net.mehvahdjukaar:moonlight:1.19.2-2.2.31@jar",
+          "name": "Moonlight Library",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 839995,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/moonlight-1.19.2-2.2.31-forge.jar",
+            "MD5": "ab669a01a6f1b9dd3fb200b4013c62a3"
+          }
+        },
+        {
+          "id": "com.chaosthedude:naturescompass:1.19.2-1.10.0-forge@jar",
+          "name": "Nature's Compass",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 210023,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/NaturesCompass-1.19.2-1.10.0-forge.jar",
+            "MD5": "629b8abab8951d46c2ad078f3f12553a"
+          }
+        },
+        {
+          "id": "net.coderbot.iris:oculus:1.2.8@jar",
+          "name": "Oculus",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1886580,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/OCD1.19.2-0.1_alpha.jar",
+            "MD5": "74a1a12bb09f8108b63b5add5cf2934a"
+          }
+        },
+        {
+          "id": "potionstudios.byg:byg:2.0.0.13@jar",
+          "name": "Oh The Biomes You'll Go",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 36453240,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/Oh_The_Biomes_You'll_Go-forge-1.19.2-2.0.0.13.jar",
+            "MD5": "43087145240c9356bc4cacbe5a89decb"
+          }
+        },
+        {
+          "id": "me.jellysquid.mods.sodium.client:rubidium:0.6.2a@jar",
+          "name": "Rubidium",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1383807,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/rubidium-0.6.2a.jar",
+            "MD5": "52245d079adf96ddacc61cc90e2f8c7c"
+          }
+        },
+        {
+          "id": "net.p3pp3rf1y:sophisticatedbackpacks:1.19.2-3.18.44.815@jar",
+          "name": "Sophisticated Backpacks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 774056,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/sophisticatedbackpacks-1.19.2-3.18.44.815.jar",
+            "MD5": "689cc9702bc6c1c9fcfbcaca2077cf9e"
+          }
+        },
+        {
+          "id": "net.p3pp3rf1y:sophisticatedcore:1.19.2-0.5.49.245@jar",
+          "name": "Sophisticated Core",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 989615,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/sophisticatedcore-1.19.2-0.5.49.245.jar",
+            "MD5": "b371e61a9715bbf961eb1f458383a131"
+          }
+        },
+        {
+          "id": "com.jaquadro.minecraft:storagedrawers:11.1.2@jar",
+          "name": "Storage Drawers",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 580748,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/StorageDrawers-1.19-11.1.2.jar",
+            "MD5": "3f65972ac73962b980a5c7facf24292e"
+          }
+        },
+        {
+          "id": "net.mehvahdjukaar:supplementaries:1.19.2-2.3.4@jar",
+          "name": "Supplementaries",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 14572316,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/supplementaries-1.19.2-2.3.4.jar",
+            "MD5": "bea15deccd1eb40c8675d01e874b4a64"
+          }
+        },
+        {
+          "id": "terrablender.core:terrablender:2.0.1.136@jar",
+          "name": "TerraBlender",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 96499,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/TerraBlender-forge-1.19.2-2.0.1.136.jar",
+            "MD5": "ed2fe6eb99f5d399db71e71f209de2ac"
+          }
+        },
+        {
+          "id": "com.tiviacz:travelersbackpack:8.2.20@jar",
+          "name": "Traveler's Backpack",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 539206,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/TravelersBackpack-1.19.2-8.2.20.jar",
+            "MD5": "e1a8df7440fed7c23a1894951d10078a"
+          }
+        },
+        {
+          "id": "net.blay09.mods:waystones:11.3.1@jar",
+          "name": "Waystones",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 397819,
+            "url": "https://github.com/mchdistro/tanari_0331/raw/main/servers/tanari_0331-1.19.2/forgemods/required/waystones-forge-1.19.2-11.3.1.jar",
+            "MD5": "d11288066796af8360da63e80370e6b6"
           }
         }
       ]
